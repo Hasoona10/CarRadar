@@ -11,7 +11,6 @@ const NAV_LINKS = [
   { id: 'search', label: 'Search' },
   { id: 'listings', label: 'Compare' },
   { id: 'watchlist', label: 'Watchlist' },
-  { id: 'insights', label: 'Insights' },
 ];
 
 export default function NavBar({ savedCount, onWatchlistClick }) {

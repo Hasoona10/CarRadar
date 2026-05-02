@@ -10,7 +10,6 @@ import MissionPanel from './components/MissionPanel.jsx';
 import BestDealCard from './components/BestDealCard.jsx';
 import MarketplaceStrip from './components/MarketplaceStrip.jsx';
 import ListingList from './components/ListingList.jsx';
-import BuyerInsights from './components/BuyerInsights.jsx';
 import CompareTray from './components/CompareTray.jsx';
 import CompareModal from './components/CompareModal.jsx';
 import ListingModal from './components/ListingModal.jsx';
@@ -329,7 +328,6 @@ function App() {
             title={listingsTitle}
             subtitle={listingsSubtitle}
           />
-          <BuyerInsights listings={filteredListings} />
         </section>
       </main>
 

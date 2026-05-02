@@ -921,16 +921,7 @@ select.field__input {
 /* ---------- Results grid ---------- */
 
 .results-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
-  gap: 1.25rem;
-  align-items: start;
-}
-
-@media (max-width: 1080px) {
-  .results-grid {
-    grid-template-columns: 1fr;
-  }
+  display: block;
 }
 
 /* ---------- Listings ---------- */
@@ -986,20 +977,6 @@ select.field__input {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.1rem;
-}
-
-/* On the narrow results column (with insights panel), aim for 2 columns */
-@media (min-width: 1081px) {
-  .listings__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* When insights panel stacks below, allow 3 columns on wide screens */
-@media (min-width: 1300px) and (max-width: 1080px) {
-  .listings__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 620px) {
