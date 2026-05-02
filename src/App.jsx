@@ -32,10 +32,7 @@ const defaultFilters = {
   maxMileage: '',
   marketplace: 'All Marketplaces',
   dealStatus: 'All Deals',
-  sellerType: 'Private',
   sortBy: 'Best Deal',
-  location: 'Fullerton, CA',
-  radius: 100,
 };
 
 // pull saved listing ids out of localStorage on first load.
@@ -85,10 +82,6 @@ function applyFiltersAndSort(all, filters, showSavedOnly, savedIds) {
 
   if (filters.marketplace !== 'All Marketplaces') {
     result = result.filter((l) => l.source === filters.marketplace);
-  }
-
-  if (filters.sellerType && filters.sellerType !== 'Any') {
-    result = result.filter((l) => l.sellerType === filters.sellerType);
   }
 
   if (filters.dealStatus !== 'All Deals') {
